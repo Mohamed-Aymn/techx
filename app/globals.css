@@ -123,8 +123,8 @@
 }
 
 code {
-  background-color: rgb(51, 0, 0);
-  color: red;
+  background-color: rgb(29, 1, 1);
+  color: rgb(221, 113, 113);
   padding: 0.2rem 0.4rem;
   border-radius: 0.2rem;
 }

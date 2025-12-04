@@ -20,9 +20,18 @@ const sections = [
   {
     title: "Solution",
     content: (
-      <p>
-        Implemented SSR in <code>/app/second-challenge/first-solution</code>
-      </p>
+      <>
+        <p>
+          Implemented SSR in <code>/app/second-challenge/first-solution</code>
+        </p>
+        <p>Trigger these commands to check the validity of SEO Meta tags:</p>
+        <ul className="pl-5 mt-2 list-disc">
+          <li><code>curl http://localhost:3000/second-challenge/first-solution -o page.html</code></li>
+          <li><code>grep -oP &apos;(?&lt;=&lt;title&gt;).*?(?=&lt;/title&gt;)&apos; page.html</code></li>
+          <li><code>grep -iPo &apos;(?&lt;= &lt;meta name=&quot;description&quot; content=&quot;).*?(?=&quot;)&apos; page.html</code></li>
+          <li><code>grep -iPo &apos;(?&lt;= &lt;meta name=&quot;keywords&quot; content=&quot;).*?(?=&quot;)&apos; page.html</code></li>
+        </ul>
+      </>
     ),
   },
   {
