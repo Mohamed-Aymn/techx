@@ -3,32 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image"
 
 const sections = [
   {
     title: "Problem",
     content: (
       <>
-        <p>Old websites often required full page reloads for every interaction.</p>
+        <p>Server-Side Rendering solves SEO issues that pure CSR (SPA) cannot handle.</p>
         <ul className="pl-5 mt-2 list-disc">
-          <li>Legacy UI in <code>public/pages-old</code></li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Egypt" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">
-              Wikipedia
-            </a> and old Facebook.
-          </li>
-          <Image
-            src="https://www.feedough.com/wp-content/uploads/2020/03/Feedough_Facebook_News_Feed.webp"
-            alt="img"
-            unoptimized
-            width={350}
-            height={350}
-            className="mx-auto py-2"
-          />
-          <q>
-            Especially in case of slow and interrupted internet connections.
-          </q>
+          <li>SPA does not support SEO</li>
+          <li>Slow websites on initial load</li>
         </ul>
       </>
     ),
@@ -36,30 +20,30 @@ const sections = [
   {
     title: "Solution",
     content: (
-      <p>Implement SPA as in <code>/first-challenge/first-solution</code> using React routing and partial page updates.</p>
+      <p>
+        Implemented SSR in <code>/app/second-challenge/first-solution</code>
+      </p>
     ),
   },
   {
     title: "Solution: Audience Exercise",
     content: (
-      <p>Create another router with different content and number of routes to see SPA behavior.</p>
-    ),
-  },
-  {
-    title: "Solution in Real Life",
-    content: (
       <p>
-        Example: <a href="https://www.linkedin.com/my-items/saved-jobs/" className="text-blue-600 underline">LinkedIn saved jobs</a> uses SPA-like navigation.
+        Import a client component in SSR page to demonstrate hybrid rendering (CSR + SSR) and interactivity.
       </p>
     ),
   },
   {
-    title: "Conclusion",
-    content: <p>Partial page update allows changing only necessary components instead of reloading the entire page for smoother and uninterrupted experience.</p>,
+    title: "Theory",
+    content: (
+      <p>
+        In modern web apps, boundaries between CSR and SSR are blurring. You can combine server rendering for SEO with client components for interactivity.
+      </p>
+    ),
   },
 ];
 
-export default function PresentationPage() {
+export default function SSRPresentationPage() {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -114,8 +98,7 @@ export default function PresentationPage() {
         {sections.map((_, idx) => (
           <span
             key={idx}
-            className={`w-3 h-3 rounded-full ${idx === current ? "bg-blue-600" : "bg-gray-300"
-              }`}
+            className={`w-3 h-3 rounded-full ${idx === current ? "bg-blue-600" : "bg-gray-300"}`}
           />
         ))}
       </div>
