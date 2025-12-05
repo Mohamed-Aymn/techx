@@ -66,7 +66,7 @@ const sections = [
   },
   {
     title: "Conclusion",
-    content: <p>Partial page update allows changing only necessary components instead of reloading the entire page for smoother and uninterrupted experience.</p>,
+    content: <p>Partial page update allows changing only necessary components instead of reloading the entire page for smoother and uninterrupted experience, <b>Especially for applications-based websites like Facebook and Linkedin.</b></p>,
   },
 ];
 

@@ -46,7 +46,7 @@ const sections = [
     title: "Theory",
     content: (
       <p>
-        In modern web apps, boundaries between CSR and SSR are blurring. You can combine server rendering for SEO with client components for interactivity.
+        In modern web apps, <b>boundaries between CSR and SSR are getting blured.</b> You can combine server rendering for SEO with client components for interactivity.
       </p>
     ),
   },
