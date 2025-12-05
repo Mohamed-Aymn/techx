@@ -22,7 +22,7 @@ const sections = [
     content: (
       <>
         <p>
-          Implemented SSR in <code>/app/second-challenge/first-solution</code>
+          Implemented SSR in <code>/app/(challenges)/second-challenge/first-solution</code>
         </p>
         <p>Trigger these commands to check the validity of SEO Meta tags:</p>
         <ul className="pl-5 mt-2 list-disc">

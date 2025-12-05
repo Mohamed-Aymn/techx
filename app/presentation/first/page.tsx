@@ -36,7 +36,7 @@ const sections = [
   {
     title: "Solution",
     content: (
-      <p>Implement SPA as in <code>/first-challenge/first-solution</code> using React routing and partial page updates.</p>
+      <p>Implement SPA as in <code>/(challenges)/first-challenge/first-solution</code> using React routing and partial page updates.</p>
     ),
   },
   {

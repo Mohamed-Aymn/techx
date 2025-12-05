@@ -15,7 +15,7 @@ const sections = [
           <li>Overfetching or under-fetching data</li>
           <li>Over abstracting network communication between client and server</li>
         </ul>
-        <p>You can visit problem&apos;s code from here <code>/app/third-challenge/problem</code></p>
+        <p>You can visit problem&apos;s code from here <code>/app/(challenges)/third-challenge/problem</code></p>
       </>
     ),
   },
